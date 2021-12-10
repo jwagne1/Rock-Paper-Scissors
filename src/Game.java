@@ -24,12 +24,11 @@ public class Game {
             int playerTwoWins = 0;
             int tie = 0;
 
+            boolean isGameOn = true;
+            while (isGameOn) {
+                int menuSelection = startMenu();
 
-            int menuSelection = startMenu();
-            System.out.println(menuSelection);
-
-
-            String[] gameChoices = {"r", "p", "s"};
+                String[] gameChoices = {"r", "p", "s"};
 
                 if (menuSelection == 1) {
                     System.out.println("\nPlease type your choice: r (Rock), p (Paper), or s (Scissors) \n");
@@ -42,36 +41,36 @@ public class Game {
                         System.out.println("It's a Tie!");
                         tie++;
                         System.out.println(tie);
-                        startMenu();
+//                        startMenu();
                     } else if (playerPick.equals("r")) {
                         if (computerPick.equals("s")) {
                             System.out.println("You win!");
                             playerOneWins++;
-                            startMenu();
+//                            startMenu();
                         } else if (computerPick.equals("p")) {
                             System.out.println("You lose!");
                             compWins++;
-                            startMenu();
+//                            startMenu();
                         }
                     } else if (playerPick.equals("p")) {
                         if (computerPick.equals("r")) {
                             System.out.println("You win!");
                             playerOneWins++;
-                            startMenu();
+//                            startMenu();
                         } else if (computerPick.equals("s")) {
                             System.out.println("You lose!");
                             compWins++;
-                            startMenu();
+//                            startMenu();
                         }
                     } else if (playerPick.equals("s")) {
                         if (computerPick.equals("p")) {
                             System.out.println("You win!");
                             playerOneWins++;
-                            startMenu();
+//                            startMenu();
                         } else if (computerPick.equals("r")) {
                             System.out.println("You lose!");
                             compWins++;
-                            startMenu();
+//                            startMenu();
                         }
                     }
                 } else if (menuSelection == 2) {
@@ -86,12 +85,12 @@ public class Game {
                                     + "\nTie: " + tie
                     );
                 } else if (menuSelection == 4) {
-
+                    isGameOn = false;
                     System.out.println("\nGoodbye!");
                 }
 
             }
-
+        }
 
 
 }
