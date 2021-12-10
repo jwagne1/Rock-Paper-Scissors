@@ -89,7 +89,7 @@ public class Game {
                     System.out.println("\nGoodbye!");
                 }
 
-            }
+            }sc.close();
         }
 
 }
