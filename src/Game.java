@@ -41,36 +41,36 @@ public class Game {
                         System.out.println("It's a Tie!");
                         tie++;
                         System.out.println(tie);
-//                        startMenu();
+
                     } else if (playerPick.equals("r")) {
                         if (computerPick.equals("s")) {
                             System.out.println("You win!");
                             playerOneWins++;
-//                            startMenu();
+
                         } else if (computerPick.equals("p")) {
                             System.out.println("You lose!");
                             compWins++;
-//                            startMenu();
+
                         }
                     } else if (playerPick.equals("p")) {
                         if (computerPick.equals("r")) {
                             System.out.println("You win!");
                             playerOneWins++;
-//                            startMenu();
+
                         } else if (computerPick.equals("s")) {
                             System.out.println("You lose!");
                             compWins++;
-//                            startMenu();
+
                         }
                     } else if (playerPick.equals("s")) {
                         if (computerPick.equals("p")) {
                             System.out.println("You win!");
                             playerOneWins++;
-//                            startMenu();
+
                         } else if (computerPick.equals("r")) {
                             System.out.println("You lose!");
                             compWins++;
-//                            startMenu();
+
                         }
                     }
                 } else if (menuSelection == 2) {
