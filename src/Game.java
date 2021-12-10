@@ -8,7 +8,7 @@ public class Game {
                 +"\n=========="
                 +"\n1. Type '1' to play against Computer."
                 +"\n2. Type '2' to play against a Friend."
-                +"\n3. Type '3' to view your game history."
+                +"\n3. Type '3' to view your Game History."
                 +"\n4. Type '4' to stop playing.\n");
 
         int menuSelection = scan.nextInt();
@@ -91,6 +91,5 @@ public class Game {
 
             }
         }
-
 
 }
